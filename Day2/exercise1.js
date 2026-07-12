@@ -68,5 +68,10 @@ console.log(challenge.startsWith('30'))
 console.log(challenge.endsWith('JavaScript'))
 
 //Question 23
+console.log(challenge.match(/a/g))
 
-//Question 23
+//Question 24
+console.log('30 Days of'.concat(' ', 'JavaScript'))
+
+//Question 25
+console.log(challenge.repeat(2))
