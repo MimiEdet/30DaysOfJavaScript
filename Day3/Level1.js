@@ -49,4 +49,30 @@ console.log(4 == "4"); // true   — loose equality, type coercion
 console.log(4 === "4"); // false  — strict, different types
 
 // Length comparison
-console.log("python".length === "jargon".length); // false (falsy comparison)
+console.log("python".length !== "jargon".length); // false (falsy comparison)
+
+//Question 6
+console.log(4 > 3 && 10 < 12); // true
+console.log(4 > 3 && 10 > 12); // false
+console.log(4 > 3 || 10 < 12); // true
+console.log(4 > 3 || 10 > 12); // true
+console.log(!(4 > 3)); // false
+console.log(!(4 < 3)); // true
+console.log(!false); // true
+console.log(!(4 > 3 && 10 < 12)); // false
+console.log(!(4 > 3 && 10 > 12)); // true
+console.log(!(4 === "4")); // true
+
+// No 'on' in both dragon and python
+console.log(!("dragon".includes("on") && "python".includes("on"))); // false
+
+//Question 7
+const now = new Date();
+
+console.log("Year:   ", now.getFullYear());
+console.log("Month:  ", now.getMonth() + 1); // 0-indexed, so +1
+console.log("Date:   ", now.getDate());
+console.log("Day:    ", now.getDay()); // 0=Sun, 6=Sat
+console.log("Hours:  ", now.getHours());
+console.log("Minutes:", now.getMinutes());
+console.log("Seconds since Jan 1 1970:", Date.now());
